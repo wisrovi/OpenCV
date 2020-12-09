@@ -63,7 +63,7 @@ while(1):
             far = tuple(cnt[f][0])
             cv2.circle(frame,far,5,[0,0,255],-1)             # draw a circle/ dot at the defect point. 
             count += 1                                       # count is keeping track of number of defect points
-            print d
+            print(d)
     #cv2.drawContours(frame,[cnt],0,(255,0,0),3)
     font = cv2.FONT_HERSHEY_COMPLEX
     cv2.putText(frame,str(count+1),(100,100),font,1,(0,0,255),1)    # Outputting "count + 1"in "frame"and displaying the output.
